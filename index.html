@@ -1,111 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshaj K - Portfolio</title>
-    <meta name="description" content="Portfolio of Akshaj K, CY Student at JECC.">
+    <meta name="description" content="Portfolio of Akshaj K, CyberSecurity Engineering Student.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header slide-in-top">
-            <h1 class="name">Akshaj K</h1>
-            <p class="title">CyberSecurity Engineering Student</p>
-            <p class="location">Thottakara P.O, Ottapalam, Palakkad, Kerala, India</p>
-        </header>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AK<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <a href="#" class="btn-primary btn-small">Resume</a>
+            </div>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <section class="section fade-in delay-1" id="about">
-                <h2 class="section-title">Objective</h2>
-                <p>A motivated B.Tech Cybersecurity graduate aiming to begin a career in the security domain by assisting in threat analysis, incident response, and implementation of secure solutions, while continuously learning and advancing my cybersecurity expertise.</p>
-            </section>
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content fade-up">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Akshaj K</h1>
+            <h2 class="hero-role">CyberSecurity Engineering Student</h2>
+            <p class="hero-desc">Dedicated to securing digital environments through advanced threat analysis, incident response, and implementing secure solutions.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Let's Connect</a>
+            </div>
+        </div>
+        <!-- Animated Background Elements will be in CSS -->
+        <div class="hero-bg-elements">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+    </header>
 
-            <section class="section fade-in delay-2" id="education">
+    <main>
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container fade-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a motivated B.Tech Cybersecurity graduate aiming to begin a career in the security domain. My passion lies in assisting in threat analysis, incident response, and the implementation of secure solutions.</p>
+                        <p>Currently studying at Jyothi Engineering College, I am continuously learning and advancing my expertise to stay ahead in the ever-evolving landscape of cybersecurity.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="3">0</h3>
+                            <p class="stat-label">Years of Study</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="2">0</h3>
+                            <p class="stat-label">Internships</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number" data-target="10">0</h3>
+                            <p class="stat-label">Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container fade-up">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass-card">
+                        <h3 class="category-title">Technical Skills</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Python</span></li>
+                            <li><span class="skill-name">HTML / CSS</span></li>
+                            <li><span class="skill-name">JavaScript</span></li>
+                            <li><span class="skill-name">C (basics)</span></li>
+                            <li><span class="skill-name">Ethical Hacking</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3 class="category-title">Soft Skills</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Communication</span></li>
+                            <li><span class="skill-name">Leadership Skills</span></li>
+                            <li><span class="skill-name">Motivation</span></li>
+                            <li><span class="skill-name">Critical Thinking</span></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3 class="category-title">Languages</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Malayalam (Native)</span></li>
+                            <li><span class="skill-name">English</span></li>
+                            <li><span class="skill-name">Hindi</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects" id="projects">
+            <div class="container fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card glass-card">
+                        <div class="project-content">
+                            <h3 class="project-title">REAL-TIME MULTIMODAL AI FOR DIGITAL MEDIA INTEGRITY</h3>
+                            <p class="project-subtitle">USING GUARDIAN PROTOCOL ON SOCIAL MEDIA</p>
+                            <p class="project-desc">Detects manipulated/deepfake videos by analyzing both visual and audio content. Uses a CNN-based visual analysis module for facial manipulation and MFCC-based audio analysis for synthetic speech.</p>
+                            <div class="project-tags">
+                                <span>AI/ML</span>
+                                <span>CNN</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-text">View Details &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience" id="experience">
+            <div class="container fade-up">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <!-- Internship 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Internship</span>
+                            <h3 class="timeline-title">EHACKIFY CYBERSECURITY RESEARCH & TRAINING</h3>
+                            <p class="timeline-role">Security Operation Center</p>
+                            <p>Successfully completed a one month internship on Vulnerability Assessment & Penetration testing.</p>
+                        </div>
+                    </div>
+                    <!-- Internship 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">Internship</span>
+                            <h3 class="timeline-title">TECHMAGHI</h3>
+                            <p class="timeline-role">MERN Stack Development</p>
+                            <p>Participated in a two-month internship focused on MERN Stack Development. Gained Skills in HTML, CSS, JAVASCRIPT, REACTJS, MONGODB, NODE JS, EXPRESS JS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section education" id="education">
+            <div class="container fade-up">
                 <h2 class="section-title">Education</h2>
-                <div class="card" style="margin-bottom: 1rem;">
-                    <h3 class="card-title">BTECH in Computer Science Cyber Security Engineering</h3>
-                    <p class="card-subtitle">Jyothi Engineering College, Thrissur | 2023 – 2027</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-primary);">CGPA - 5.63 (current)</p>
+                <div class="timeline">
+                    <!-- Education 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2023 - 2027</span>
+                            <h3 class="timeline-title">BTECH in Computer Science Cyber Security</h3>
+                            <p class="timeline-role">Jyothi Engineering College, Thrissur</p>
+                            <p>Current CGPA - 5.63</p>
+                        </div>
+                    </div>
+                    <!-- Education 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h3 class="timeline-title">Higher Secondary Education, Bio-Science</h3>
+                            <p class="timeline-role">TRK HSS Vaniyamkulam</p>
+                            <p>Achieved 89%</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">Higher Secondary Education, Bio-Science (89%)</h3>
-                    <p class="card-subtitle">TRK HSS Vaniyamkulam | 2021 – 2023</p>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section fade-in delay-2" id="internships">
-                <h2 class="section-title">Internships</h2>
-                <div class="card" style="margin-bottom: 1rem;">
-                    <h3 class="card-title">EHACKIFY CYBERSECURITY RESEARCH & TRAINING</h3>
-                    <p style="font-size: 0.95rem;">Successfully completed a one month internship on Vulnerability Assessment & Penetration testing, Security Operation Center.</p>
+        <!-- Certifications & Achievements -->
+        <section class="section services" id="services">
+            <div class="container fade-up">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <h3>Conference Presentation</h3>
+                        <p>Presented a paper titled "Real-Time Multimodal AI for Digital Media Integrity using Guardian Protocol on Social Media" in the International Conference (ICXGA - 2026) held on 10.04.2026.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <h3>Certifications</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">• Introduction to Cyber Security</li>
+                            <li style="margin-bottom: 0.5rem;">• Simulated Network with CISCO Packet Tracker</li>
+                            <li style="margin-bottom: 0.5rem;">• Artificial Intelligence For All</li>
+                            <li>• Generative AI for all</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="card-title">TECHMAGHI</h3>
-                    <p style="font-size: 0.95rem;">Participated in a two-month internship focused on MERN Stack Development. Gained Skills in HTML, CSS, JAVASCRIPT, REACTJS, MONGODB, NODE JS, EXPRESS JS.</p>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section fade-in delay-3" id="projects">
-                <h2 class="section-title">Projects</h2>
-                <div class="card">
-                    <h3 class="card-title">REAL-TIME MULTIMODAL AI FOR DIGITAL MEDIA INTEGRITY</h3>
-                    <p class="card-subtitle" style="margin-bottom: 0.5rem;">USING GUARDIAN PROTOCOL ON SOCIAL MEDIA</p>
-                    <p style="font-size: 0.95rem;">It is used to detect manipulated/deepfake videos by analyzing both visual and audio content. It uses a CNN-based visual analysis module to identify facial manipulation and MFCC-based audio analysis to detect synthetic or manipulated speech. The outputs are combined using decision-level fusion to improve detection reliability.</p>
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container fade-up">
+                <div class="contact-header">
+                    <h2 class="section-title">Let's Build Something Amazing Together.</h2>
+                    <p>Feel free to reach out for collaborations or just a friendly hello.</p>
                 </div>
-            </section>
-
-            <section class="section fade-in delay-3" id="achievements">
-                <h2 class="section-title">Achievements</h2>
-                <div class="card">
-                    <h3 class="card-title">Conference Paper Presentation</h3>
-                    <p style="font-size: 0.95rem;">Presented a paper titled "Real-Time Multimodal AI for Digital Media Integrity using Guardian Protocol on Social Media" in the International Conference on Explainable AI, Green Edge Computing and Autonomous Systems (ICXGA - 2026) held on 10.04.2026.</p>
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <a href="mailto:ajukenath@gmail.com">ajukenath@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <h4>Phone</h4>
+                            <a href="tel:+917025168804">+91 7025168804</a>
+                        </div>
+                        <div class="info-item">
+                            <h4>Location</h4>
+                            <p>Thottakara P.O, Ottapalam, Palakkad, Kerala, India</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Social</h4>
+                            <a href="https://www.linkedin.com/in/akshaj-k-659022318" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                    <form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
                 </div>
-            </section>
-
-            <section class="section fade-in delay-3" id="skills">
-                <h2 class="section-title">Skills & Certifications</h2>
-                <div class="card" style="margin-bottom: 1rem;">
-                    <h3 class="card-title">Technical Skills</h3>
-                    <p style="font-size: 0.95rem;">Python, HTML, CSS, JAVASCRIPT, C (basics), Ethical Hacking</p>
-                </div>
-                <div class="card" style="margin-bottom: 1rem;">
-                    <h3 class="card-title">Soft Skills & Languages</h3>
-                    <p style="font-size: 0.95rem;"><strong>Soft Skills:</strong> Communication, Leadership Skills, Motivation, Critical Thinking<br>
-                    <strong>Languages:</strong> Malayalam (native), English, Hindi</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Certifications</h3>
-                    <p style="font-size: 0.95rem;">Introduction to Cyber Security, Simulated Network with CISCO Packet Tracker, Artificial Intelligence For All, Generative AI for all</p>
-                </div>
-            </section>
-
-            <section class="section fade-in delay-3" id="contact">
-                <h2 class="section-title">Contact</h2>
-                <ul class="contact-list">
-                    <li>
-                        <span class="contact-label">Email</span>
-                        <a href="mailto:ajukenath@gmail.com" class="contact-link">ajukenath@gmail.com</a>
-                    </li>
-                    <li>
-                        <span class="contact-label">Phone</span>
-                        <a href="tel:+917025168804" class="contact-link">7025168804</a>
-                    </li>
-                    <li>
-                        <span class="contact-label">LinkedIn</span>
-                        <a href="https://www.linkedin.com/in/akshaj-k-659022318" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/akshaj-k-659022318</a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        
-        <footer class="footer fade-in delay-4">
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
             <p>&copy; 2026 Akshaj K. All rights reserved.</p>
-        </footer>
-    </div>
+            <a href="#home" class="back-to-top" aria-label="Back to Top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+            </a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
